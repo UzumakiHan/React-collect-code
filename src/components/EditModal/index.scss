@@ -1,0 +1,104 @@
+.index{
+    &-dialog{
+        position: fixed;
+        left: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba(0, 0, 0, .75);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 990;
+
+        &-wrap {
+            width: 628px;
+            height: 646px;
+            padding: 48px 78px;
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
+            background: url('../../assets/index/edit-bg.png') no-repeat top center;
+            background-size: 100%;
+
+            &-title {
+                color: #333333;
+                font-size: 36px;
+                font-weight: bold;
+                text-align: center;
+            }
+
+            &-content {
+                margin-top: 32px;
+
+                &-head {
+                    color: #333333;
+                    font-size: 28px;
+                    margin-bottom: 12px;
+                }
+
+                &-input {
+                    width: 472px;
+                    height: 72px;
+                    border-radius: 16px;
+                    border: 1px solid #C6C6C6;
+                    &-content{
+                        width: 100%;
+                        height: 72px;
+                        padding:0 10px;
+                        font-size: 26px;
+                        box-sizing: border-box;
+                    }
+                }
+
+            }
+
+            &-btn {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                margin-top: 48px;
+
+                view {
+                    width: 228px;
+                    height: 88px;
+                    text-align: center;
+                    line-height: 88px;
+                    border-radius: 44px;
+                    font-size: 32px;
+                }
+
+                &-left {
+                    background: linear-gradient(132deg, #0BD3FF 0%, #4CB4FF 100%);
+                    color: #fff;
+                }
+
+                &-right {
+                    color: #333333;
+                    background: #F4F5F9;
+                }
+            }
+
+            &-line {
+                width: 472px;
+                border: 2px dotted #E6E6E6;
+                margin-top: 60px;
+
+            }
+
+            &-delete {
+                width: 472px;
+                height: 88px;
+                border-radius: 44px;
+                border: 2px solid #FF2828;
+                line-height: 88px;
+                text-align: center;
+                background-color: #fff;
+                color: #FF2828;
+                font-size: 32px;
+                margin-top: 58px;
+            }
+        }
+
+    }
+}

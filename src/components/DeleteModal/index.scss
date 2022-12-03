@@ -1,0 +1,69 @@
+.index{
+    &-dialog {
+        position: fixed;
+        left: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba(0, 0, 0, .75);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 990;
+
+      
+        &-delete {
+            width: 592px;
+            height: 592px;
+            padding: 48px 60px;
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background: url('../../assets/index/delete-bg.png') no-repeat top center;
+            background-size: 100%;
+
+            &-title {
+                color: #333;
+                font-size: 32px;
+                text-align: center;
+            }
+
+            &-qrcode {
+                width: 244px;
+                height: 244px;
+                border-radius: 16px;
+                border: 2px solid #F5F5F5;
+                margin-top: 32px;
+            }
+
+            &-btn {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                margin-top: 48px;
+
+                view {
+                    width: 228px;
+                    height: 88px;
+                    text-align: center;
+                    line-height: 88px;
+                    border-radius: 44px;
+                    font-size: 32px;
+                }
+
+                &-left {
+                    background: linear-gradient(132deg, #0BD3FF 0%, #4CB4FF 100%);
+                    color: #fff;
+                }
+
+                &-right {
+                    color: #333333;
+                    background: #F4F5F9;
+                    margin-left: 16px;
+                }
+            }
+
+        }
+    }
+}
