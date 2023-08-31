@@ -5,8 +5,11 @@ const config = {
     '@/config': path.resolve(__dirname, '../src/config'),
     '@/constant': path.resolve(__dirname, '../src/constant'),
     '@/utils': path.resolve(__dirname,'../src/utils'),
-    '@/typings': path.resolve(__dirname,'../src/typings'),
+    '@/types': path.resolve(__dirname,'../src/types'),
     '@/components': path.resolve(__dirname,'../src/components'),
+    '@/components': path.resolve(__dirname,'../src/components'),
+    '@/common': path.resolve(__dirname,'../src/common'),
+
 
   },
   projectName: 'codereact',

@@ -1,4 +1,6 @@
 import Taro from "@tarojs/taro";
+import dayjs from 'dayjs';
+
 //小程序状态栏高度、导航栏高度
 export const handleNavInfo = ()=>{
      //状态栏的高度，单位px
@@ -27,7 +29,9 @@ export const getLoginInfo = ()=>{
         })
     })
 }
-//toast封装
+export const handleFormatTime = (time, formatType = 'YYYY-MM-DD') => {
+    return dayjs(time).format(formatType)
+}
 export const toast=(type,message)=>{
     return  Taro.showToast({
         title: message,
